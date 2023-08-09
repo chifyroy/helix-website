@@ -18,6 +18,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
+  --button-color: #000;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -149,7 +150,6 @@ a.button:any-link, button {
   padding: 5px 30px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
@@ -157,7 +157,10 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  font-size: 22px;
+  background-color: var(--button-color);
+  border-radius: 0;
+  font-weight: normal;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -176,7 +179,8 @@ a.button.secondary, button.secondary {
   color: var(--text-color)
 }
 
-main input {
+main input,
+main textarea {
   font-size: 1.25rem;
   width: 100%;
   max-width: 50rem;
@@ -229,12 +233,12 @@ main img {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 16px 16px;
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 32px 32px;
   }
 }
 
