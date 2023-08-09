@@ -239,10 +239,10 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections > ul > li > ul {
     display: none;
-/*     position: relative; */
+    position: relative;
   }
 
-/*   header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
+  header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
     display: block;
     position: absolute;
     left: 0;
@@ -252,21 +252,6 @@ header nav .nav-sections ul > li > ul > li {
     background-color: var(--highlight-background-color);
     white-space: initial;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-  } */
-
-  header nav .nav-sections > ul > li.nav-drop > ul {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    margin-top: 12px;
-    padding: 1em;
-    background-color: var(--highlight-background-color);
-    white-space: initial;
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-  }
-
-  header nav .nav-sections > ul > li.nav-drop:hover > ul {
-    display: block;
   }
   
   header nav .nav-sections > ul > li > ul::before {
