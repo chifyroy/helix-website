@@ -3,7 +3,12 @@
 }
 
 .textimage>div {
-    display: flex;
+    display: block;
+}
+@media (min-width: 600px) {
+    .textimage>div {
+        display: flex;
+    }
 }
 
 .textimage>div>div {
