@@ -10,18 +10,20 @@ main .hero-container {
   
 main .hero {
   position: relative;
-  padding: 32px;
+  /* padding: 32px; */
   min-height: 300px;
 }
 
 main .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
   color: white;
+  left:17%;
 }
 
-main .hero picture {
+/* main .hero picture {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -30,7 +32,7 @@ main .hero picture {
   right: 0;
   object-fit: cover;
   box-sizing: border-box;
-}
+} */
 
 main .hero img {
   object-fit: cover;
