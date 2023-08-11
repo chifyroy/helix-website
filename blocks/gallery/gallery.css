@@ -1,0 +1,9 @@
+.gallery .slick-list div {
+    height: 600px;
+}
+
+.gallery img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
