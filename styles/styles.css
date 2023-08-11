@@ -62,6 +62,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
@@ -252,4 +256,8 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.default-content-wrapper {
+  text-align: center;
 }
