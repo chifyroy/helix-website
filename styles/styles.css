@@ -254,9 +254,9 @@ main .section > div {
 }
 
 /* section metadata */
-main .section.highlight {
+/* main .section.highlight {
   background-color: var(--highlight-background-color);
-}
+} */
 
 .default-content-wrapper {
   text-align: center;
