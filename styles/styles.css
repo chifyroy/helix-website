@@ -236,13 +236,13 @@ main img {
   width: 100%;
 }
 
-main .section {
+main .section > div {
   padding: 16px 16px;
 }
 
-@media (min-width: 600px) {
-  main .section {
-    padding: 32px 32px;
+@media (min-width: 900px) {
+  main .section > div {
+    padding: 0;
   }
 }
 
