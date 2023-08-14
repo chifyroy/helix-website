@@ -181,7 +181,7 @@ header nav .nav-sections ul > li {
 }
 
 header nav .nav-sections ul > li > ul {
-/*   margin-top: 0; */
+  background-color: #7c6060;
 }
 
 header nav .nav-sections ul > li > ul > li {
@@ -250,7 +250,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
+    background-color: #7c6060;
     white-space: initial;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   }
