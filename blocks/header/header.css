@@ -1,7 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
   background-color: #7c6060;
-  color: #fff;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -147,6 +146,7 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  color: #fff;
 }
 
 header nav .nav-brand img {
@@ -161,6 +161,7 @@ header nav .nav-sections {
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
+  color: #fff;
 }
 
 header nav[aria-expanded="true"] .nav-sections {
