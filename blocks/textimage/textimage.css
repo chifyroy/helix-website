@@ -6,7 +6,9 @@
 
 .textimage>div {
     display: block;
+    margin-bottom: 15px;
 }
+
 @media (min-width: 600px) {
     .textimage>div {
         display: flex;
@@ -21,24 +23,20 @@
     align-items: center;
 }
 
-/* .textimage >div>div:nth-child(2n) {
-    padding-left: 30px;
-} */
-
-.textimage > div:nth-child(2n) > div:first-child,
-.textimage > div:nth-child(2n + 1) > div:nth-child(2n),
-.textimage > div:first-child > div:nth-child(2n) {
-    flex: 0 0 450px;
-    height: 450px;
+.textimage>div:nth-child(2n)>div:first-child,
+.textimage>div:nth-child(2n + 1)>div:nth-child(2n),
+.textimage>div:first-child>div:nth-child(2n) {
+    /* flex: 0 0 450px; */
+    height: 350px;
 }
 
-.textimage > div:nth-child(2n + 1) > div:first-child,
-.textimage > div:first-child > div:first-child {
-    padding-right: 30px;
+.textimage>div:nth-child(2n + 1)>div:first-child,
+.textimage>div:first-child>div:first-child {
+    padding-right: 0;
 }
 
-.textimage > div:nth-child(2n) > div:nth-child(2n) {
-    padding-left: 30px;
+.textimage>div:nth-child(2n)>div:nth-child(2n) {
+    padding-left: 0;
 }
 
 .textimage picture {
@@ -51,4 +49,23 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 600px) {
+
+    .textimage>div:nth-child(2n + 1)>div:first-child,
+    .textimage>div:first-child>div:first-child {
+        padding-right: 30px;
+    }
+
+    .textimage>div:nth-child(2n)>div:nth-child(2n) {
+        padding-left: 30px;
+    }
+
+    .textimage>div:nth-child(2n)>div:first-child,
+    .textimage>div:nth-child(2n + 1)>div:nth-child(2n),
+    .textimage>div:first-child>div:nth-child(2n) {
+        flex: 0 0 450px;
+        height: 450px;
+    }
 }
