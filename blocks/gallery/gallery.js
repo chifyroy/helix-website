@@ -15,6 +15,8 @@ $(document).ready(function() {
         focusOnSelect: true
       });
 
-    $('.gallery').slick('refresh');
-    $('.gallerythumbnail').slick('refresh');
+    setTimeout(() => {
+        $('.gallery').slick('refresh');
+        $('.gallerythumbnail').slick('refresh');
+    }, 2000);
 });
