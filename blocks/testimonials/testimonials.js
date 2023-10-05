@@ -91,8 +91,7 @@ export default function decorate(block) {
 
   rows.forEach((row, index) => {
     const tabListContent = row.querySelector(':scope > div:first-child');
-    const tabListTitle = Array.from(tabListContent.querySelectorAll('p:not(:empty)'))
-      .filter((p) => p.querySelector('picture') === null)[0]; // workaround for missing :has() selector in Firefox
+    const tabListTitle = tabListContent.querySelector('p:not(:empty):not(:has(picture)');
     const tabListImage = tabListContent.querySelector('picture');
 
     // init tablist
