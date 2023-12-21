@@ -25,6 +25,10 @@ main .hero h1 {
   padding: 20px;
 }
 
+main .hero video {
+  width: 100%;
+}
+
 @media (min-width: 600px) {
   main .hero h1 {
     font-size: 48px;
