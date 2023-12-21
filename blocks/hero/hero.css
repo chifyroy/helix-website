@@ -16,12 +16,13 @@ main .hero {
 
 main .hero h1 {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 35%;
   margin: 0 auto;
   color: white;
-  left:17%;
-  font-size: 20px;
+  left:11%;
+  width: 50%;
+  background-color: #7c6060;
+  padding: 20px;
 }
 
 @media (min-width: 600px) {
