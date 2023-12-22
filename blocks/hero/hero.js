@@ -11,10 +11,9 @@ $(document).ready(function(){
 
     $(".hero div div picture").remove();
     $(".hero div div").append(video);
-    $(".hero div div").append("<h1>Welcome to my site!!</h1>");
 
     $("video[autoplay]").each(function(){ 
-    this.muted = true;
+        this.muted = true;
         this.play(); 
     });
 });
