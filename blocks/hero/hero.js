@@ -9,7 +9,6 @@ $(document).ready(function(){
     });
 
     $(".hero div div picture").replaceWith(video);
-    //$(".hero div div").append(video);
 
     $("video[autoplay]").each(function(){ 
         this.muted = true;
