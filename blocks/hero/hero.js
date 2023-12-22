@@ -9,8 +9,8 @@ $(document).ready(function(){
         loop: true
     });
 
-    $(".hero div div picture").remove();
-    $(".hero div div").append(video);
+    //$(".hero div div picture").remove();
+    //$(".hero div div").append(video);
 
     $("video[autoplay]").each(function(){ 
         this.muted = true;
