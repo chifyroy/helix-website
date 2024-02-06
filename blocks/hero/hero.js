@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var video = $('<video />', {
         id: 'video',
-        src: 'https://www.w3schools.com/html/mov_bbb.mp4',
+        src: 'https://s3.amazonaws.com/www.studiocreationsinc.com/assets/videos/160820_001_NYC_Train_1080p.mp4',
         type: 'video/mp4',
         autoplay: true,
         muted: true,
