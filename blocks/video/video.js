@@ -17,7 +17,7 @@ const loadScript = (url, callback, type) => {
 };
 
 const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-    <video id='video-html5' src="${url.href}" type='video/mp4' autoplay=true muted=true loop=true />
+    <video id='video-html5' src=`${url.href}` type='video/mp4' autoplay=true muted=true loop=true />
   </div>`;
 
 const embedYoutube = (url, autoplay) => {
