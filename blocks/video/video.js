@@ -21,11 +21,13 @@ const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; p
   </div>`;
 
 const embedHTMLVideo = (url) => { `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-    <video id='video-html5' src="${url.href}" type='video/mp4' />
+    <video width="400" controls="">
+  <source src="${url.href}" type="video/mp4">
+  <source src="${url.href}" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
   </div>`
-  $("#video-html5").each(function(){ 
-        this.src = url.href;
-    });
+  
 }
 
 const embedYoutube = (url, autoplay) => {
