@@ -20,6 +20,10 @@ const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; p
     <video id='video-html5' src=`${url.href}` type='video/mp4' autoplay=true muted=true loop=true />
   </div>`;
 
+const embedHTMLVideo = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+    <video id='video-html5' src=`${url.href}` type='video/mp4' autoplay=true muted=true loop=true />
+  </div>`;
+
 const embedYoutube = (url, autoplay) => {
   const usp = new URLSearchParams(url.search);
   const suffix = autoplay ? '&muted=1&autoplay=1' : '';
@@ -70,6 +74,10 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['twitter'],
       embed: embedTwitter,
+    },
+    {
+      match: ['.mp4'],
+      embed: embedHTMLVideo,
     },
   ];
 
