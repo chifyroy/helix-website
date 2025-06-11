@@ -1,2 +1,5 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/12drfecuF07uYo-jwfta1rsYoJMqFT6mD
+  /: 
+  url: https://author-p8452-e1321974.adobeaemcloud.com/bin/franklin.delivery/chifyroy/helix-website/main
+  type: markup
+  suffix: .html
